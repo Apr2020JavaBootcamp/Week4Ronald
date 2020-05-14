@@ -1,0 +1,45 @@
+
+h2{
+    font-family: Inconsolata;
+    text-align: center;
+}
+nav{
+    font-family: Inconsolata;
+
+}
+body{
+    /*background-image: url("https://www.lefthudson.com/wp-content/uploads/2019/11/light-colours-wallpapers-unique-download-light-color-hd-wallpapers-gallery-2019-of-light-colours-wallpapers.jpg");*/
+    background-image: url("https://community-home-assistant-assets.s3.dualstack.us-west-2.amazonaws.com/optimized/3X/d/e/dea8c60d19e758c8744437e7b91b73c10ad0e030_2_690x387.jpeg");
+}
+
+div{
+    font-family: Inconsolata;
+}
+.jumbotron{
+    background-image: url("https://www.lefthudson.com/wp-content/uploads/2019/11/light-colours-wallpapers-unique-download-light-color-hd-wallpapers-gallery-2019-of-light-colours-wallpapers.jpg");
+    border-style: solid;
+    border-color: mediumpurple;
+}
+.center{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btn-sm{
+    color: blue;
+}
+.dropdown-menu{
+    background-color: lightblue;
+}
+.lead{
+    text-align: justify;
+}
+
+.signature{
+    text-align: left;
+}
+
+/*https://www.lefthudson.com/wp-content/uploads/2019/11/light-colours-wallpapers-unique-download-light-color-hd-wallpapers-gallery-2019-of-light-colours-wallpapers.jpg*/
+/*background-image: url("https://i.pinimg.com/564x/01/fe/82/01fe82a9cebfc230a1a6fe031072ea17.jpg");*/
+/*https://freight.cargo.site/t/original/i/62ac862b2e5c263ce0eeb8d00b69220cb462cb6d12807d8a624c09a24fd1758d/Lyve-ALLedit-EdNacional-02.png*/
+/*smoke >> https://www.nicepng.com/png/detail/12-124562_15-smoke-burst-png-for-free-download-on.png*/
