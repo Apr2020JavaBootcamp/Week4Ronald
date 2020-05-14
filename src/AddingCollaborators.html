@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>AddingCollaborators</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="BlogStyle.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-
 </head>
 <body>
 <div class="row">
     <div class="col-sm"></div>
-    <div class="col-8" >
+    <div class="col-8" id="mainCol">
         <h2><a href="Home.html">The Java Hut<img src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/java-512.png" height="50px" width="50px"></a></h2>
         <h6><a href="ProfilePage.html"> by Ronald Porrata</a></h6>
         <nav>
@@ -31,52 +30,41 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                        aria-expanded="false"><span class="p-1 border border-primary border-bottom-0">Categories</span></a>
-                     <div class="dropdown-menu">
+                    <div class="dropdown-menu">
                         <a class="dropdown-item" href="CatHTMLCSSBOOTSTRAP.html">HTML/CSS/Bootstrap</a>
                         <a class="dropdown-item" href="CatGithub.html">Github</a>
                     </div>
                 </li>
             </ul>
         </nav>
-            <div class="jumbotron">
-                <h1 class="display-6" style="text-align: center">- Blog Log -</h1>
-                <hr class="my-4">
-                <h4><strong><em>Centering an image with HTML/CSS</em></strong></h4>
-                <p>Getting an image to be centered is a simple task but it is by no means intuitive
-                    <a class="btn btn btn-sm" href="CenteringImage.html" role="button">...Learn more</a></p>
-                <p class="lead">
-
-                </p>
-                <hr class="my-4">
-                <h4><strong><em>My experience with HTML thus far</em></strong></h4>
-                <p>HTML is an interesting language. It is and isn't straight forward
-                    at the same time<a class="btn btn btn-sm" href="ExperienceWithHTML.html" role="button">...Learn more</a></p>
-                <p class="lead">
-
-                </p>
-                <hr class="my-4">
-                <h4><strong><em>Pushing your projects to Github</em></strong></h4>
-                <p>Pushing to Github is one of those things you can say you definitely need to learn,
-                    particularly<a class="btn btn btn-sm" href="PushingToGit.html" role="button">...Learn more</a></p>
-                <p class="lead">
-
-                </p>
-                <hr class="my-4">
-                <h4><strong><em>Adding collaborators to your Github repositories</em></strong></h4>
-                <p>For group projects, knowing how to take advantage of Github's collaborators
-                    feature is essential<a class="btn btn btn-sm" href="AddingCollaborators.html" role="button">...Learn more</a></p>
-                <p class="lead">
-
-                </p>
-                <hr class="my-4">
-            </div>
-        </nav>
+        <div class="jumbotron">
+            <h4><strong><em>Adding collaborators to your Github repositories</em></strong></h4>
+            <p class="lead">For group projects, knowing how to take advantage of Github's collaborators
+                feature is essential. A collaborator is just someone you give permission to push/pull
+                from a given repository. Follow these easy steps to invite collaborators for your projects:</p>
+            <ol>
+                <li>
+                    Open the repository you wish to add collaborators on
+                </li>
+                <li>
+                    On the second line after the nav bar at the end, select 'Settings'
+                </li>
+                <li>
+                    Once in settings, from the vertical menu on the left select 'Manage access'
+                </li>
+                <li>
+                    Almost at the bottom of the screen there should be a box with a title that reads 'Manage access'.
+                    Find a green button that reads 'Invite a Collaborator' inside this box and select it.
+                </li>
+                <li>
+                    Now provide the Github information of your collaborators and send the invite. They will receive an
+                    email that will grant them access to your repository.
+                </li>
+            </ol>
+        </div>
     </div>
-
     <div class="col-sm"></div>
 </div>
-
-
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PushingToGit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="BlogStyle.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="row">
+    <div class="col-sm"></div>
+    <div class="col-8" id="mainCol">
+        <h2><a href="Home.html">The Java Hut<img src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/java-512.png" height="50px" width="50px"></a></h2>
+        <h6><a href="ProfilePage.html"> by Ronald Porrata</a></h6>
+        <nav>
+
+            <ul class="nav justify-content-center" >
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="Home.html"><span class="p-1 border border-primary border-left-0">Home</span></a>
+                </li>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false"><span class="p-1 border border-primary border-bottom-0">About</span></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="ProfilePage.html">Author</a>
+                    <a class="dropdown-item" href="BootcampDescription.html">Java 8Week Web-Dev Boot Camp</a>
+                    </li>
+                </div>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                       aria-expanded="false"><span class="p-1 border border-primary border-bottom-0">Categories</span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="CatHTMLCSSBOOTSTRAP.html">HTML/CSS/Bootstrap</a>
+                        <a class="dropdown-item" href="CatGithub.html">Github</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="jumbotron">
+            <h4><strong><em>Pushing your projects to Github</em></strong></h4>
+            <p class="lead">Pushing to Github is one of those things you can say you definitely need to learn,
+                particularly when it involves a group project, which is likely the case almost anywhere you work
+                at. This goes for Github in general, but for the purposes of this post, I will only cover pushing
+                projects to Github.</p>
+            <ol>
+                <li>
+                    Create an account on Github
+                </li>
+                <li>
+                    Take your Github ID and associated email address and open your IDE
+                </li>
+                <li>
+                    Create a new project. Open the terminal and at the bottom left of the screen and
+                    enter the following (excluding the quotations) if you have never pushed before:
+                    <ul>
+                        <li>
+                            git config --global user.name "your Github ID"
+                        </li>
+                        <li>
+                            git config --global user.email "your email associated to your Github ID"
+                        </li>
+                        <li>
+                            git config -l <br> ^this one displays a list that should contain the information you just entered into the system
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Create a README file that will give a general description of the project as follows:
+                    <ul>
+                        <li>
+                            echo "The text that will be in the file" >> README.md
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Now it's time to populate your local repository with your current project:
+                    <ul>
+                        <li>
+                            git init
+                        </li>
+                        <li>
+                            git add .
+                        </li>
+                        <li>
+                            git commit -m ""Text describing the project you're pushing""
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Now go to Github website and at the top right of the screen, click on the '+' sign and select 'New Repository'.
+                </li>
+                <li>
+                    Give the repository a name and leave the rest settings as their default. Copy the repository URL.
+                </li>
+                <li>
+                    In your terminal enter the following:
+                    <ul>
+                        <li>
+                            git remote add origin "paste the URL you just copied"
+                        </li>
+                        <li>
+                            git push origin master
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Wait a few seconds then refresh your repository on Github to see your project there.
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="col-sm"></div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
